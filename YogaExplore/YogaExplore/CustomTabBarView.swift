@@ -2,8 +2,8 @@
 //  CustomTabBarView.swift
 //  YogaExplore
 //
-//  Created by Itesh Dutt on 09/01/21.
-//  Copyright © 2021 Itesh Dutt. All rights reserved.
+//  Created by Ios Developer on 09/01/21.
+//  Copyright © 2021 Ios Developer. All rights reserved.
 //
 
 import Foundation
