@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B7A1A8925A89F3D0087D12B /* yogaTabUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A7825A89F3D0087D12B /* yogaTabUnselected.png */; };
+		8B7A1A8A25A89F3D0087D12B /* favoriteIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A7925A89F3D0087D12B /* favoriteIcon.png */; };
+		8B7A1A8B25A89F3D0087D12B /* ratingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A7A25A89F3D0087D12B /* ratingIcon.png */; };
+		8B7A1A8C25A89F3D0087D12B /* settingsTabUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A7B25A89F3D0087D12B /* settingsTabUnselected.png */; };
+		8B7A1A8D25A89F3D0087D12B /* articlesTabUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A7C25A89F3D0087D12B /* articlesTabUnselected.png */; };
+		8B7A1A8E25A89F3D0087D12B /* yogaTabSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A7D25A89F3D0087D12B /* yogaTabSelected.png */; };
+		8B7A1A8F25A89F3D0087D12B /* reviewButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A7E25A89F3D0087D12B /* reviewButtonIcon.png */; };
+		8B7A1A9025A89F3D0087D12B /* chatTabUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A7F25A89F3D0087D12B /* chatTabUnselected.png */; };
+		8B7A1A9125A89F3D0087D12B /* articlesTabSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A8025A89F3D0087D12B /* articlesTabSelected.png */; };
+		8B7A1A9225A89F3D0087D12B /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A8125A89F3D0087D12B /* locationIcon.png */; };
+		8B7A1A9325A89F3D0087D12B /* settingsTabSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A8225A89F3D0087D12B /* settingsTabSelected.png */; };
+		8B7A1A9425A89F3D0087D12B /* chatTabSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A8325A89F3D0087D12B /* chatTabSelected.png */; };
+		8B7A1A9525A89F3D0087D12B /* backIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A8425A89F3D0087D12B /* backIcon.png */; };
+		8B7A1A9625A89F3D0087D12B /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A8625A89F3D0087D12B /* Ubuntu-Medium.ttf */; };
+		8B7A1A9725A89F3D0087D12B /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A8725A89F3D0087D12B /* Ubuntu-Regular.ttf */; };
+		8B7A1A9825A89F3D0087D12B /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A1A8825A89F3D0087D12B /* Ubuntu-Bold.ttf */; };
+		8B8113BC25AA257300904484 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8113BB25AA257300904484 /* CustomTabBarView.swift */; };
+		8B8113BE25AA259400904484 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8113BD25AA259400904484 /* CustomTabBar.swift */; };
+		8BA02F0025A7415100887713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02EFF25A7415100887713 /* AppDelegate.swift */; };
+		8BA02F0225A7415100887713 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02F0125A7415100887713 /* SceneDelegate.swift */; };
+		8BA02F0425A7415100887713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02F0325A7415100887713 /* ViewController.swift */; };
+		8BA02F0725A7415100887713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA02F0525A7415100887713 /* Main.storyboard */; };
+		8BA02F0925A7415700887713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA02F0825A7415700887713 /* Assets.xcassets */; };
+		8BA02F0C25A7415700887713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA02F0A25A7415700887713 /* LaunchScreen.storyboard */; };
+		8BA02F1525A777DB00887713 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02F1325A777DA00887713 /* CustomNavigationController.swift */; };
+		8BA02F1625A777DB00887713 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02F1425A777DB00887713 /* CustomTabBarController.swift */; };
+		8BA02F1B25A778B200887713 /* YogaCenterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02F1A25A778B200887713 /* YogaCenterDetailsViewController.swift */; };
+		8BA02F3E25A77D5C00887713 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02F3D25A77D5C00887713 /* GenericViewController.swift */; };
+		8BA02F4425A77E4D00887713 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02F4125A77E4D00887713 /* Global.swift */; };
+		8BA02F4525A77E4D00887713 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA02F4225A77E4D00887713 /* Constants.swift */; };
+		8BB62C7925B1D778005D91AC /* YogaCenterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB62C7825B1D778005D91AC /* YogaCenterDetailsView.swift */; };
+		8BB62C7C25B1DA41005D91AC /* YogaCenterDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB62C7B25B1DA41005D91AC /* YogaCenterDetailHeaderCell.swift */; };
+		8BB62C7E25B1E5B1005D91AC /* yogaBackgroundImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8BB62C7D25B1E5B1005D91AC /* yogaBackgroundImage.jpeg */; };
+		8BB62C8025B1E634005D91AC /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB62C7F25B1E634005D91AC /* RatingsView.swift */; };
+		8BB62C8225B2034A005D91AC /* RatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB62C8125B2034A005D91AC /* RatingCell.swift */; };
+		8BB62C8425B205AF005D91AC /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB62C8325B205AF005D91AC /* LocationCell.swift */; };
+		8BB62C8825B205ED005D91AC /* OpeningHoursCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB62C8725B205ED005D91AC /* OpeningHoursCell.swift */; };
+		8BB62C8A25B20606005D91AC /* YogaCenterDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB62C8925B20606005D91AC /* YogaCenterDescriptionCell.swift */; };
+		8BB62C8C25B20612005D91AC /* ReviewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB62C8B25B20612005D91AC /* ReviewsCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B7A1A7825A89F3D0087D12B /* yogaTabUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yogaTabUnselected.png; sourceTree = "<group>"; };
+		8B7A1A7925A89F3D0087D12B /* favoriteIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favoriteIcon.png; sourceTree = "<group>"; };
+		8B7A1A7A25A89F3D0087D12B /* ratingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ratingIcon.png; sourceTree = "<group>"; };
+		8B7A1A7B25A89F3D0087D12B /* settingsTabUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsTabUnselected.png; sourceTree = "<group>"; };
+		8B7A1A7C25A89F3D0087D12B /* articlesTabUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = articlesTabUnselected.png; sourceTree = "<group>"; };
+		8B7A1A7D25A89F3D0087D12B /* yogaTabSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yogaTabSelected.png; sourceTree = "<group>"; };
+		8B7A1A7E25A89F3D0087D12B /* reviewButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reviewButtonIcon.png; sourceTree = "<group>"; };
+		8B7A1A7F25A89F3D0087D12B /* chatTabUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatTabUnselected.png; sourceTree = "<group>"; };
+		8B7A1A8025A89F3D0087D12B /* articlesTabSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = articlesTabSelected.png; sourceTree = "<group>"; };
+		8B7A1A8125A89F3D0087D12B /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationIcon.png; sourceTree = "<group>"; };
+		8B7A1A8225A89F3D0087D12B /* settingsTabSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsTabSelected.png; sourceTree = "<group>"; };
+		8B7A1A8325A89F3D0087D12B /* chatTabSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatTabSelected.png; sourceTree = "<group>"; };
+		8B7A1A8425A89F3D0087D12B /* backIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backIcon.png; sourceTree = "<group>"; };
+		8B7A1A8625A89F3D0087D12B /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		8B7A1A8725A89F3D0087D12B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		8B7A1A8825A89F3D0087D12B /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		8B8113BB25AA257300904484 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		8B8113BD25AA259400904484 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		8BA02EFC25A7415100887713 /* YogaExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA02EFF25A7415100887713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BA02F0125A7415100887713 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8BA02F0325A7415100887713 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BA02F0625A7415100887713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BA02F0825A7415700887713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BA02F0B25A7415700887713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BA02F0D25A7415700887713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA02F1325A777DA00887713 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		8BA02F1425A777DB00887713 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		8BA02F1A25A778B200887713 /* YogaCenterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaCenterDetailsViewController.swift; sourceTree = "<group>"; };
+		8BA02F3D25A77D5C00887713 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		8BA02F4125A77E4D00887713 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		8BA02F4225A77E4D00887713 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8BB62C7825B1D778005D91AC /* YogaCenterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaCenterDetailsView.swift; sourceTree = "<group>"; };
+		8BB62C7B25B1DA41005D91AC /* YogaCenterDetailHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaCenterDetailHeaderCell.swift; sourceTree = "<group>"; };
+		8BB62C7D25B1E5B1005D91AC /* yogaBackgroundImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yogaBackgroundImage.jpeg; sourceTree = "<group>"; };
+		8BB62C7F25B1E634005D91AC /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		8BB62C8125B2034A005D91AC /* RatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCell.swift; sourceTree = "<group>"; };
+		8BB62C8325B205AF005D91AC /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		8BB62C8725B205ED005D91AC /* OpeningHoursCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHoursCell.swift; sourceTree = "<group>"; };
+		8BB62C8925B20606005D91AC /* YogaCenterDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaCenterDescriptionCell.swift; sourceTree = "<group>"; };
+		8BB62C8B25B20612005D91AC /* ReviewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BA02EF925A7415100887713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B7A1A7725A89F3D0087D12B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8BB62C7D25B1E5B1005D91AC /* yogaBackgroundImage.jpeg */,
+				8B7A1A7825A89F3D0087D12B /* yogaTabUnselected.png */,
+				8B7A1A7925A89F3D0087D12B /* favoriteIcon.png */,
+				8B7A1A7A25A89F3D0087D12B /* ratingIcon.png */,
+				8B7A1A7B25A89F3D0087D12B /* settingsTabUnselected.png */,
+				8B7A1A7C25A89F3D0087D12B /* articlesTabUnselected.png */,
+				8B7A1A7D25A89F3D0087D12B /* yogaTabSelected.png */,
+				8B7A1A7E25A89F3D0087D12B /* reviewButtonIcon.png */,
+				8B7A1A7F25A89F3D0087D12B /* chatTabUnselected.png */,
+				8B7A1A8025A89F3D0087D12B /* articlesTabSelected.png */,
+				8B7A1A8125A89F3D0087D12B /* locationIcon.png */,
+				8B7A1A8225A89F3D0087D12B /* settingsTabSelected.png */,
+				8B7A1A8325A89F3D0087D12B /* chatTabSelected.png */,
+				8B7A1A8425A89F3D0087D12B /* backIcon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8B7A1A8525A89F3D0087D12B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A1A8625A89F3D0087D12B /* Ubuntu-Medium.ttf */,
+				8B7A1A8725A89F3D0087D12B /* Ubuntu-Regular.ttf */,
+				8B7A1A8825A89F3D0087D12B /* Ubuntu-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8BA02EF325A7415100887713 = {
+			isa = PBXGroup;
+			children = (
+				8BA02EFE25A7415100887713 /* YogaExplore */,
+				8BA02EFD25A7415100887713 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BA02EFD25A7415100887713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BA02EFC25A7415100887713 /* YogaExplore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA02EFE25A7415100887713 /* YogaExplore */ = {
+			isa = PBXGroup;
+			children = (
+				8BB62C7A25B1DA1B005D91AC /* Cells */,
+				8BB62C7725B1D74A005D91AC /* Views */,
+				8BA02F3F25A77E2A00887713 /* Utility */,
+				8BA02F1925A7786700887713 /* ViewControllers */,
+				8BA02EFF25A7415100887713 /* AppDelegate.swift */,
+				8BA02F0125A7415100887713 /* SceneDelegate.swift */,
+				8BA02F0325A7415100887713 /* ViewController.swift */,
+				8BA02F1325A777DA00887713 /* CustomNavigationController.swift */,
+				8BA02F1425A777DB00887713 /* CustomTabBarController.swift */,
+				8B8113BD25AA259400904484 /* CustomTabBar.swift */,
+				8B8113BB25AA257300904484 /* CustomTabBarView.swift */,
+				8BA02F0525A7415100887713 /* Main.storyboard */,
+				8BA02F0825A7415700887713 /* Assets.xcassets */,
+				8BA02F0A25A7415700887713 /* LaunchScreen.storyboard */,
+				8BA02F0D25A7415700887713 /* Info.plist */,
+				8BA02F2225A77ABC00887713 /* Resources */,
+			);
+			path = YogaExplore;
+			sourceTree = "<group>";
+		};
+		8BA02F1925A7786700887713 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BA02F1A25A778B200887713 /* YogaCenterDetailsViewController.swift */,
+				8BA02F3D25A77D5C00887713 /* GenericViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8BA02F2225A77ABC00887713 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A1A8525A89F3D0087D12B /* Fonts */,
+				8B7A1A7725A89F3D0087D12B /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BA02F3F25A77E2A00887713 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8BA02F4225A77E4D00887713 /* Constants.swift */,
+				8BA02F4125A77E4D00887713 /* Global.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8BB62C7725B1D74A005D91AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BB62C7825B1D778005D91AC /* YogaCenterDetailsView.swift */,
+				8BB62C7F25B1E634005D91AC /* RatingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BB62C7A25B1DA1B005D91AC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8BB62C7B25B1DA41005D91AC /* YogaCenterDetailHeaderCell.swift */,
+				8BB62C8325B205AF005D91AC /* LocationCell.swift */,
+				8BB62C8725B205ED005D91AC /* OpeningHoursCell.swift */,
+				8BB62C8925B20606005D91AC /* YogaCenterDescriptionCell.swift */,
+				8BB62C8B25B20612005D91AC /* ReviewsCell.swift */,
+				8BB62C8125B2034A005D91AC /* RatingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BA02EFB25A7415100887713 /* YogaExplore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA02F1025A7415700887713 /* Build configuration list for PBXNativeTarget "YogaExplore" */;
+			buildPhases = (
+				8BA02EF825A7415100887713 /* Sources */,
+				8BA02EF925A7415100887713 /* Frameworks */,
+				8BA02EFA25A7415100887713 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YogaExplore;
+			productName = YogaExplore;
+			productReference = 8BA02EFC25A7415100887713 /* YogaExplore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BA02EF425A7415100887713 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Itesh Dutt";
+				TargetAttributes = {
+					8BA02EFB25A7415100887713 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8BA02EF725A7415100887713 /* Build configuration list for PBXProject "YogaExplore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BA02EF325A7415100887713;
+			productRefGroup = 8BA02EFD25A7415100887713 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BA02EFB25A7415100887713 /* YogaExplore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BA02EFA25A7415100887713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7A1A8A25A89F3D0087D12B /* favoriteIcon.png in Resources */,
+				8B7A1A9325A89F3D0087D12B /* settingsTabSelected.png in Resources */,
+				8BA02F0C25A7415700887713 /* LaunchScreen.storyboard in Resources */,
+				8BA02F0925A7415700887713 /* Assets.xcassets in Resources */,
+				8B7A1A9025A89F3D0087D12B /* chatTabUnselected.png in Resources */,
+				8B7A1A8C25A89F3D0087D12B /* settingsTabUnselected.png in Resources */,
+				8B7A1A9725A89F3D0087D12B /* Ubuntu-Regular.ttf in Resources */,
+				8B7A1A8E25A89F3D0087D12B /* yogaTabSelected.png in Resources */,
+				8B7A1A8B25A89F3D0087D12B /* ratingIcon.png in Resources */,
+				8BA02F0725A7415100887713 /* Main.storyboard in Resources */,
+				8B7A1A9525A89F3D0087D12B /* backIcon.png in Resources */,
+				8B7A1A9625A89F3D0087D12B /* Ubuntu-Medium.ttf in Resources */,
+				8B7A1A9225A89F3D0087D12B /* locationIcon.png in Resources */,
+				8B7A1A8D25A89F3D0087D12B /* articlesTabUnselected.png in Resources */,
+				8B7A1A9125A89F3D0087D12B /* articlesTabSelected.png in Resources */,
+				8BB62C7E25B1E5B1005D91AC /* yogaBackgroundImage.jpeg in Resources */,
+				8B7A1A9425A89F3D0087D12B /* chatTabSelected.png in Resources */,
+				8B7A1A8F25A89F3D0087D12B /* reviewButtonIcon.png in Resources */,
+				8B7A1A9825A89F3D0087D12B /* Ubuntu-Bold.ttf in Resources */,
+				8B7A1A8925A89F3D0087D12B /* yogaTabUnselected.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BA02EF825A7415100887713 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA02F1B25A778B200887713 /* YogaCenterDetailsViewController.swift in Sources */,
+				8BA02F1525A777DB00887713 /* CustomNavigationController.swift in Sources */,
+				8BA02F0425A7415100887713 /* ViewController.swift in Sources */,
+				8BB62C8225B2034A005D91AC /* RatingCell.swift in Sources */,
+				8BB62C8825B205ED005D91AC /* OpeningHoursCell.swift in Sources */,
+				8B8113BE25AA259400904484 /* CustomTabBar.swift in Sources */,
+				8B8113BC25AA257300904484 /* CustomTabBarView.swift in Sources */,
+				8BB62C8A25B20606005D91AC /* YogaCenterDescriptionCell.swift in Sources */,
+				8BB62C8425B205AF005D91AC /* LocationCell.swift in Sources */,
+				8BA02F4425A77E4D00887713 /* Global.swift in Sources */,
+				8BB62C8C25B20612005D91AC /* ReviewsCell.swift in Sources */,
+				8BA02F1625A777DB00887713 /* CustomTabBarController.swift in Sources */,
+				8BA02F3E25A77D5C00887713 /* GenericViewController.swift in Sources */,
+				8BB62C7C25B1DA41005D91AC /* YogaCenterDetailHeaderCell.swift in Sources */,
+				8BB62C7925B1D778005D91AC /* YogaCenterDetailsView.swift in Sources */,
+				8BA02F0025A7415100887713 /* AppDelegate.swift in Sources */,
+				8BA02F0225A7415100887713 /* SceneDelegate.swift in Sources */,
+				8BA02F4525A77E4D00887713 /* Constants.swift in Sources */,
+				8BB62C8025B1E634005D91AC /* RatingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8BA02F0525A7415100887713 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BA02F0625A7415100887713 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BA02F0A25A7415700887713 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BA02F0B25A7415700887713 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BA02F0E25A7415700887713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BA02F0F25A7415700887713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BA02F1125A7415700887713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEG795J5E5;
+				INFOPLIST_FILE = YogaExplore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itesh.yogaExplore.YogaExplore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BA02F1225A7415700887713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEG795J5E5;
+				INFOPLIST_FILE = YogaExplore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itesh.yogaExplore.YogaExplore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BA02EF725A7415100887713 /* Build configuration list for PBXProject "YogaExplore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA02F0E25A7415700887713 /* Debug */,
+				8BA02F0F25A7415700887713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA02F1025A7415700887713 /* Build configuration list for PBXNativeTarget "YogaExplore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA02F1125A7415700887713 /* Debug */,
+				8BA02F1225A7415700887713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BA02EF425A7415100887713 /* Project object */;
+}

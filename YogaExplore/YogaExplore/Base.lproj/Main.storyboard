@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eeB-mo-Kk6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YogaExplore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTP-PK-ETW">
+                                <rect key="frame" x="132" y="425.5" width="150" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Hnc-L7-lta"/>
+                                    <constraint firstAttribute="height" constant="45" id="o62-AZ-k32"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o11-JA-KRW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JTP-PK-ETW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NlT-yC-d2d"/>
+                            <constraint firstItem="JTP-PK-ETW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="elf-Gf-OwQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YHr-tM-Bpg"/>
+                    <connections>
+                        <outlet property="startButton" destination="JTP-PK-ETW" id="jpH-PT-3fy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="132.58928571428572"/>
+        </scene>
+        <!--Generic View Controller-->
+        <scene sceneID="HsA-8m-uRF">
+            <objects>
+                <viewController storyboardIdentifier="genericViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ckv-SZ-XqB" customClass="GenericViewController" customModule="YogaExplore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nQz-zU-eP6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXL-LB-Fwg">
+                                <rect key="frame" x="0.0" y="104" width="414" height="27"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5C-hH-2Cb">
+                                <rect key="frame" x="0.0" y="176" width="414" height="24"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c7R-2e-DVv" firstAttribute="trailing" secondItem="pXL-LB-Fwg" secondAttribute="trailing" id="2U2-QH-dma"/>
+                            <constraint firstItem="c7R-2e-DVv" firstAttribute="trailing" secondItem="A5C-hH-2Cb" secondAttribute="trailing" id="4PT-bK-OoZ"/>
+                            <constraint firstItem="A5C-hH-2Cb" firstAttribute="top" secondItem="pXL-LB-Fwg" secondAttribute="bottom" constant="45" id="PIJ-l4-Swl"/>
+                            <constraint firstItem="A5C-hH-2Cb" firstAttribute="leading" secondItem="c7R-2e-DVv" secondAttribute="leading" id="TYB-7p-wYQ"/>
+                            <constraint firstItem="pXL-LB-Fwg" firstAttribute="top" secondItem="c7R-2e-DVv" secondAttribute="top" constant="60" id="Vt1-gB-bhV"/>
+                            <constraint firstItem="pXL-LB-Fwg" firstAttribute="leading" secondItem="c7R-2e-DVv" secondAttribute="leading" id="xPQ-Aq-jiU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c7R-2e-DVv"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailTextLabel" destination="A5C-hH-2Cb" id="B8e-lM-WXv"/>
+                        <outlet property="headerLabel" destination="pXL-LB-Fwg" id="yvq-CE-7kl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bs-UQ-zK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="-14"/>
+        </scene>
+        <!--Yoga Center Details View Controller-->
+        <scene sceneID="QdH-6K-ark">
+            <objects>
+                <viewController storyboardIdentifier="yogaCenterDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6dH-s5-tbg" customClass="YogaCenterDetailsViewController" customModule="YogaExplore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P1B-DF-kFa" customClass="YogaCenterDetailsView" customModule="YogaExplore" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="EFC-Iz-KNp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="YogaCenterDetailHeaderCell" id="RgG-C9-rVs" customClass="YogaCenterDetailHeaderCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="380.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RgG-C9-rVs" id="i3g-JJ-MII">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="380.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeU-4e-dWX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="349"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yogaBackgroundImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="yFC-Bs-DwF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qs-AW-sv6">
+                                                            <rect key="frame" x="25" y="60" width="25" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="25" id="Fqe-2g-c55"/>
+                                                                <constraint firstAttribute="height" constant="25" id="TKM-8U-gXh"/>
+                                                            </constraints>
+                                                            <state key="normal" image="backIcon.png"/>
+                                                            <connections>
+                                                                <action selector="backPressedWithSender:" destination="P1B-DF-kFa" eventType="touchUpInside" id="yXA-kQ-dt6"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="yFC-Bs-DwF" secondAttribute="trailing" id="3Tu-44-LzM"/>
+                                                        <constraint firstItem="6Qs-AW-sv6" firstAttribute="leading" secondItem="eeU-4e-dWX" secondAttribute="leading" constant="25" id="479-pL-RAZ"/>
+                                                        <constraint firstItem="6Qs-AW-sv6" firstAttribute="top" secondItem="eeU-4e-dWX" secondAttribute="top" constant="60" id="628-Al-9yO"/>
+                                                        <constraint firstItem="yFC-Bs-DwF" firstAttribute="top" secondItem="eeU-4e-dWX" secondAttribute="top" id="9Ep-VH-8OA"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yFC-Bs-DwF" secondAttribute="bottom" constant="349" id="Buk-av-CDa"/>
+                                                        <constraint firstItem="yFC-Bs-DwF" firstAttribute="leading" secondItem="eeU-4e-dWX" secondAttribute="leading" id="FTL-zJ-DGN"/>
+                                                        <constraint firstAttribute="height" constant="349" id="ThW-vq-Ncs"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YaD-vD-vpz" userLabel="RatingsView" customClass="RatingsView" customModule="YogaExplore" customModuleProvider="target">
+                                                    <rect key="frame" x="40" y="320" width="334" height="60.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXt-8e-c06" userLabel="RatingBackgroundView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="262" height="60.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymh-0I-gjX">
+                                                                    <rect key="frame" x="25" y="12" width="217" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LWf-FZ-WHa">
+                                                                    <rect key="frame" x="25" y="34" width="90" height="15"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="90" id="Zv8-Vn-tUk"/>
+                                                                        <constraint firstAttribute="height" constant="15" id="jw5-wT-1lU"/>
+                                                                    </constraints>
+                                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="5" id="rg4-dD-Rl1">
+                                                                        <size key="itemSize" width="15" height="15"/>
+                                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                    </collectionViewFlowLayout>
+                                                                    <cells>
+                                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RatingCell" id="RGE-2U-kMB" customClass="RatingCell" customModule="YogaExplore" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9tA-Oi-eY9">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ratingIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2xQ-aY-i0f">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="14" id="3wr-Eq-VdU"/>
+                                                                                            <constraint firstAttribute="height" constant="14" id="Mzk-q4-ugv"/>
+                                                                                        </constraints>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="2xQ-aY-i0f" firstAttribute="leading" secondItem="9tA-Oi-eY9" secondAttribute="leading" id="L8H-BK-vcQ"/>
+                                                                                    <constraint firstItem="2xQ-aY-i0f" firstAttribute="top" secondItem="9tA-Oi-eY9" secondAttribute="top" id="XyU-ze-zwa"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="2xQ-aY-i0f" secondAttribute="trailing" id="uR8-EF-iC3"/>
+                                                                                    <constraint firstAttribute="bottom" secondItem="2xQ-aY-i0f" secondAttribute="bottom" id="vVJ-0c-mzZ"/>
+                                                                                </constraints>
+                                                                            </collectionViewCellContentView>
+                                                                            <connections>
+                                                                                <outlet property="starIconImageView" destination="2xQ-aY-i0f" id="vtQ-ga-bq8"/>
+                                                                            </connections>
+                                                                        </collectionViewCell>
+                                                                    </cells>
+                                                                    <connections>
+                                                                        <outlet property="dataSource" destination="YaD-vD-vpz" id="BZG-PR-CQU"/>
+                                                                        <outlet property="delegate" destination="YaD-vD-vpz" id="5hm-aU-9FG"/>
+                                                                    </connections>
+                                                                </collectionView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drw-YI-7OT">
+                                                                    <rect key="frame" x="125" y="34" width="137" height="15"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="15" id="gfa-4f-oag"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="drw-YI-7OT" secondAttribute="trailing" id="0DJ-aJ-kLU"/>
+                                                                <constraint firstItem="Ymh-0I-gjX" firstAttribute="leading" secondItem="rXt-8e-c06" secondAttribute="leading" constant="25" id="7Xg-EX-kMT"/>
+                                                                <constraint firstItem="LWf-FZ-WHa" firstAttribute="top" secondItem="Ymh-0I-gjX" secondAttribute="bottom" constant="5" id="DOu-ld-us2"/>
+                                                                <constraint firstItem="Ymh-0I-gjX" firstAttribute="top" secondItem="rXt-8e-c06" secondAttribute="top" constant="12" id="VK7-OF-vJp"/>
+                                                                <constraint firstItem="drw-YI-7OT" firstAttribute="leading" secondItem="LWf-FZ-WHa" secondAttribute="trailing" constant="10" id="eWu-N7-zfa"/>
+                                                                <constraint firstItem="LWf-FZ-WHa" firstAttribute="leading" secondItem="rXt-8e-c06" secondAttribute="leading" constant="25" id="mCG-6P-AQx"/>
+                                                                <constraint firstItem="LWf-FZ-WHa" firstAttribute="top" secondItem="drw-YI-7OT" secondAttribute="top" id="qek-Fa-5GZ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Ymh-0I-gjX" secondAttribute="trailing" constant="20" id="s71-c7-oUJ"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="szN-JK-5Wo">
+                                                            <rect key="frame" x="262" y="11" width="2" height="38.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="2" id="fQF-g6-Aae"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNK-9A-fWz" userLabel="FavoriteView">
+                                                            <rect key="frame" x="264" y="0.0" width="70" height="60.5"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favoriteIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iqr-s1-eCJ">
+                                                                    <rect key="frame" x="24" y="17.5" width="22" height="26"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="22" id="fBB-SF-ebN"/>
+                                                                        <constraint firstAttribute="height" constant="26" id="hnW-DL-Zuo"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstItem="Iqr-s1-eCJ" firstAttribute="centerY" secondItem="TNK-9A-fWz" secondAttribute="centerY" id="WX4-I9-Aa0"/>
+                                                                <constraint firstItem="Iqr-s1-eCJ" firstAttribute="centerX" secondItem="TNK-9A-fWz" secondAttribute="centerX" id="gJU-0j-ZcO"/>
+                                                                <constraint firstAttribute="width" constant="70" id="iIn-M3-dyW"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="TNK-9A-fWz" secondAttribute="bottom" id="4Ja-g5-YrR"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rXt-8e-c06" secondAttribute="bottom" id="61G-b7-2qJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="szN-JK-5Wo" secondAttribute="bottom" constant="11" id="BC8-XZ-Tyi"/>
+                                                        <constraint firstItem="rXt-8e-c06" firstAttribute="top" secondItem="YaD-vD-vpz" secondAttribute="top" id="Njc-Te-TZR"/>
+                                                        <constraint firstAttribute="height" constant="60" id="UtZ-XY-HM8"/>
+                                                        <constraint firstItem="szN-JK-5Wo" firstAttribute="leading" secondItem="rXt-8e-c06" secondAttribute="trailing" id="dlz-q2-R06"/>
+                                                        <constraint firstItem="szN-JK-5Wo" firstAttribute="top" secondItem="YaD-vD-vpz" secondAttribute="top" constant="11" id="fOJ-92-oBq"/>
+                                                        <constraint firstItem="TNK-9A-fWz" firstAttribute="top" secondItem="YaD-vD-vpz" secondAttribute="top" id="fmf-tx-T6Z"/>
+                                                        <constraint firstAttribute="trailing" secondItem="TNK-9A-fWz" secondAttribute="trailing" id="k3Y-Mu-QOS"/>
+                                                        <constraint firstItem="rXt-8e-c06" firstAttribute="leading" secondItem="YaD-vD-vpz" secondAttribute="leading" id="vtp-0T-NNm"/>
+                                                        <constraint firstItem="TNK-9A-fWz" firstAttribute="leading" secondItem="szN-JK-5Wo" secondAttribute="trailing" id="zaV-NU-M3K"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="dividerImageView" destination="szN-JK-5Wo" id="9tX-AL-yML"/>
+                                                        <outlet property="favoriteImageView" destination="Iqr-s1-eCJ" id="91b-rz-PUG"/>
+                                                        <outlet property="ratingLabel" destination="Ymh-0I-gjX" id="FtS-9N-gdD"/>
+                                                        <outlet property="ratingValueLabel" destination="drw-YI-7OT" id="gEG-s4-y6j"/>
+                                                        <outlet property="ratingsCollectionView" destination="LWf-FZ-WHa" id="Wza-Vg-4lb"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YaD-vD-vpz" firstAttribute="leading" secondItem="i3g-JJ-MII" secondAttribute="leading" constant="40" id="BXX-bi-shH"/>
+                                                <constraint firstItem="eeU-4e-dWX" firstAttribute="top" secondItem="i3g-JJ-MII" secondAttribute="top" id="CHV-FG-XAk"/>
+                                                <constraint firstItem="eeU-4e-dWX" firstAttribute="leading" secondItem="i3g-JJ-MII" secondAttribute="leading" id="Oyy-80-9kF"/>
+                                                <constraint firstAttribute="trailing" secondItem="YaD-vD-vpz" secondAttribute="trailing" constant="40" id="jSr-eQ-OMG"/>
+                                                <constraint firstAttribute="trailing" secondItem="eeU-4e-dWX" secondAttribute="trailing" id="jkt-XV-0j3"/>
+                                                <constraint firstAttribute="bottom" secondItem="YaD-vD-vpz" secondAttribute="bottom" id="juR-fO-wCR"/>
+                                                <constraint firstItem="YaD-vD-vpz" firstAttribute="top" secondItem="i3g-JJ-MII" secondAttribute="top" constant="320" id="zua-NR-zCN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="backButton" destination="6Qs-AW-sv6" id="4GW-26-cIX"/>
+                                            <outlet property="imageBottomSpaceConstraint" destination="Buk-av-CDa" id="f6u-oT-M97"/>
+                                            <outlet property="ratingViewLeadingConstrant" destination="BXX-bi-shH" id="dqk-s1-87S"/>
+                                            <outlet property="ratingViewTrailingConstraint" destination="jSr-eQ-OMG" id="yCk-B6-PZr"/>
+                                            <outlet property="ratingsView" destination="YaD-vD-vpz" id="H1v-rw-pS1"/>
+                                            <outlet property="yogaBackgroundImageView" destination="yFC-Bs-DwF" id="IVX-qC-ycK"/>
+                                            <outlet property="yogaHeaderView" destination="eeU-4e-dWX" id="acu-LT-0EC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LocationCell" id="xqK-Rz-Wm1" customClass="LocationCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="408.5" width="414" height="137"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xqK-Rz-Wm1" id="U40-b6-4bC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Efficitur Resort Yoga Center" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fv-V9-FxE">
+                                                    <rect key="frame" x="20" y="40" width="374" height="22.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nTM-jv-RJv">
+                                                    <rect key="frame" x="20" y="73.5" width="15" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="15" id="763-Fe-AYK"/>
+                                                        <constraint firstAttribute="height" constant="15" id="AKL-ju-uas"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="755 Brickyard St., Lake Zurich, IL 60047" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-5X-DrJ">
+                                                    <rect key="frame" x="44" y="71.5" width="350" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8y-YE-JQk">
+                                                    <rect key="frame" x="171.5" y="102" width="71" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="ar3-2x-Oad"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="13"/>
+                                                    <state key="normal" title="See On Map">
+                                                        <color key="titleColor" red="0.72626763579999998" green="0.62701535220000004" blue="0.53729039430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nTM-jv-RJv" firstAttribute="leading" secondItem="U40-b6-4bC" secondAttribute="leading" constant="20" id="485-0u-1ER"/>
+                                                <constraint firstAttribute="trailing" secondItem="hWQ-5X-DrJ" secondAttribute="trailing" constant="20" id="4uv-fg-NVS"/>
+                                                <constraint firstItem="hWQ-5X-DrJ" firstAttribute="top" secondItem="6Fv-V9-FxE" secondAttribute="bottom" constant="9" id="JMP-Dl-yEf"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Fv-V9-FxE" secondAttribute="trailing" constant="20" id="RmU-IH-Itb"/>
+                                                <constraint firstItem="6Fv-V9-FxE" firstAttribute="leading" secondItem="U40-b6-4bC" secondAttribute="leading" constant="20" id="UEa-gh-euo"/>
+                                                <constraint firstAttribute="bottom" secondItem="P8y-YE-JQk" secondAttribute="bottom" constant="15" id="Y5J-hk-1L1"/>
+                                                <constraint firstItem="P8y-YE-JQk" firstAttribute="centerX" secondItem="U40-b6-4bC" secondAttribute="centerX" id="YB3-Kg-U9N"/>
+                                                <constraint firstItem="6Fv-V9-FxE" firstAttribute="top" secondItem="U40-b6-4bC" secondAttribute="top" constant="40" id="ZaY-Jb-Xpj"/>
+                                                <constraint firstItem="nTM-jv-RJv" firstAttribute="top" secondItem="hWQ-5X-DrJ" secondAttribute="top" constant="2" id="m4o-Dw-9gy"/>
+                                                <constraint firstItem="hWQ-5X-DrJ" firstAttribute="leading" secondItem="nTM-jv-RJv" secondAttribute="trailing" constant="9" id="mL8-l4-EIE"/>
+                                                <constraint firstItem="P8y-YE-JQk" firstAttribute="top" secondItem="hWQ-5X-DrJ" secondAttribute="bottom" constant="14" id="wev-Zz-U8l"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="hWQ-5X-DrJ" id="BaN-3i-RBH"/>
+                                            <outlet property="locationIconImageView" destination="nTM-jv-RJv" id="U08-rm-FHb"/>
+                                            <outlet property="nameLabel" destination="6Fv-V9-FxE" id="hPe-11-gt6"/>
+                                            <outlet property="seeOnMapButton" destination="P8y-YE-JQk" id="I3F-zw-T6X"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OpeningHoursCell" id="WiJ-2i-nzc" customClass="OpeningHoursCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="545.5" width="414" height="85.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WiJ-2i-nzc" id="JbU-A1-Xki">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="85.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="FSX-kD-m5g" userLabel="MainStackView">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="37"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qOE-Sb-Vpn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="81" height="37"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekdays" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a9-Hn-3lL">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="81" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 - 18:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNt-lH-ToO">
+                                                                    <rect key="frame" x="0.0" y="21" width="81" height="16"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lAZ-SJ-bHV">
+                                                            <rect key="frame" x="293" y="0.0" width="81" height="37"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKp-1k-lfX">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="81" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:30 - 17:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxa-yX-AIN">
+                                                                    <rect key="frame" x="0.0" y="21" width="81" height="16"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ4-og-JRy">
+                                                    <rect key="frame" x="20" y="48" width="374" height="24.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4zv-Mq-vcm">
+                                                    <rect key="frame" x="20" y="82.5" width="374" height="3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="3" id="0CM-VB-mcd"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FSX-kD-m5g" firstAttribute="top" secondItem="JbU-A1-Xki" secondAttribute="top" id="9o0-yi-G68"/>
+                                                <constraint firstItem="FSX-kD-m5g" firstAttribute="trailing" secondItem="NZ4-og-JRy" secondAttribute="trailing" id="HtQ-OZ-yDw"/>
+                                                <constraint firstAttribute="bottom" secondItem="4zv-Mq-vcm" secondAttribute="bottom" id="Ib4-Le-Zkk"/>
+                                                <constraint firstItem="NZ4-og-JRy" firstAttribute="top" secondItem="FSX-kD-m5g" secondAttribute="bottom" constant="11" id="MFI-X3-rxN"/>
+                                                <constraint firstAttribute="trailing" secondItem="FSX-kD-m5g" secondAttribute="trailing" constant="20" id="Syu-fY-fcF"/>
+                                                <constraint firstItem="FSX-kD-m5g" firstAttribute="leading" secondItem="JbU-A1-Xki" secondAttribute="leading" constant="20" id="UHe-mZ-MLz"/>
+                                                <constraint firstItem="4zv-Mq-vcm" firstAttribute="top" secondItem="NZ4-og-JRy" secondAttribute="bottom" constant="10" id="XaZ-gH-gJd"/>
+                                                <constraint firstItem="4zv-Mq-vcm" firstAttribute="leading" secondItem="FSX-kD-m5g" secondAttribute="leading" id="YF6-Da-lox"/>
+                                                <constraint firstItem="NZ4-og-JRy" firstAttribute="leading" secondItem="FSX-kD-m5g" secondAttribute="leading" id="iAh-DN-CAz"/>
+                                                <constraint firstItem="FSX-kD-m5g" firstAttribute="trailing" secondItem="4zv-Mq-vcm" secondAttribute="trailing" id="jQq-q9-qJ7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dividerImageView" destination="4zv-Mq-vcm" id="Uip-Rr-fga"/>
+                                            <outlet property="openningStatusLabel" destination="NZ4-og-JRy" id="ShC-gQ-IV0"/>
+                                            <outlet property="weekdayLabel" destination="8a9-Hn-3lL" id="mQo-MZ-k8D"/>
+                                            <outlet property="weekdayTimingsLabel" destination="JNt-lH-ToO" id="kAh-KQ-mef"/>
+                                            <outlet property="weekendLabel" destination="kKp-1k-lfX" id="nXD-bg-f6M"/>
+                                            <outlet property="weekendTimingsLabel" destination="Rxa-yX-AIN" id="x0F-Gb-kF4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="YogaCenterDescriptionCell" id="9ys-An-UEh" customClass="YogaCenterDescriptionCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="631" width="414" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9ys-An-UEh" id="h42-on-Fx4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9h-HM-iwF">
+                                                    <rect key="frame" x="20" y="18" width="374" height="16"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHc-zq-Bhm">
+                                                    <rect key="frame" x="20" y="44" width="374" height="48"/>
+                                                    <string key="text">Integer ac interdum lacus. Nunc porta semper lacus a varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</string>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-GC-YS2">
+                                                    <rect key="frame" x="40" y="112" width="334" height="3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="3" id="nBH-TH-6uW"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wHc-zq-Bhm" firstAttribute="leading" secondItem="v9h-HM-iwF" secondAttribute="leading" id="EBJ-V6-n9v"/>
+                                                <constraint firstItem="Hsg-GC-YS2" firstAttribute="leading" secondItem="v9h-HM-iwF" secondAttribute="leading" constant="20" id="Ku1-LQ-SzQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="v9h-HM-iwF" secondAttribute="trailing" constant="20" id="Q9w-j8-xCs"/>
+                                                <constraint firstItem="v9h-HM-iwF" firstAttribute="leading" secondItem="h42-on-Fx4" secondAttribute="leading" constant="20" id="VG9-t0-tQ9"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hsg-GC-YS2" secondAttribute="bottom" id="dXj-Hs-fqV"/>
+                                                <constraint firstItem="v9h-HM-iwF" firstAttribute="trailing" secondItem="Hsg-GC-YS2" secondAttribute="trailing" constant="20" id="dr7-hb-aME"/>
+                                                <constraint firstItem="v9h-HM-iwF" firstAttribute="top" secondItem="h42-on-Fx4" secondAttribute="top" constant="18" id="f9Y-yj-MHj"/>
+                                                <constraint firstItem="Hsg-GC-YS2" firstAttribute="top" secondItem="wHc-zq-Bhm" secondAttribute="bottom" constant="20" id="oQo-aV-RUf"/>
+                                                <constraint firstItem="wHc-zq-Bhm" firstAttribute="top" secondItem="v9h-HM-iwF" secondAttribute="bottom" constant="10" id="pjv-rG-zTK"/>
+                                                <constraint firstItem="v9h-HM-iwF" firstAttribute="trailing" secondItem="wHc-zq-Bhm" secondAttribute="trailing" id="yBH-ql-8TE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="wHc-zq-Bhm" id="koO-JN-DzM"/>
+                                            <outlet property="descriptionTextLabel" destination="v9h-HM-iwF" id="EK1-su-R2j"/>
+                                            <outlet property="dividerImageView" destination="Hsg-GC-YS2" id="3O7-2B-Xye"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReviewsCell" id="2hr-kH-Hzn" customClass="ReviewsCell" customModule="YogaExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="746" width="414" height="93.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2hr-kH-Hzn" id="J7z-Mq-Lgs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dQu-um-Rtl">
+                                                    <rect key="frame" x="152.5" y="20" width="109.5" height="23.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALA-dw-fcj">
+                                                            <rect key="frame" x="0.0" y="0.5" width="23" height="23"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="23" id="LqW-6Q-aKM"/>
+                                                                <constraint firstAttribute="width" constant="23" id="asT-gZ-gV4"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button" image="reviewButtonIcon.png"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTb-3I-N5T">
+                                                            <rect key="frame" x="33" y="0.5" width="76.5" height="22.5"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dQu-um-Rtl" firstAttribute="centerY" secondItem="J7z-Mq-Lgs" secondAttribute="centerY" id="Jb9-aV-DNj"/>
+                                                <constraint firstItem="dQu-um-Rtl" firstAttribute="top" secondItem="J7z-Mq-Lgs" secondAttribute="top" constant="20" id="JuI-9s-jzK"/>
+                                                <constraint firstItem="dQu-um-Rtl" firstAttribute="centerX" secondItem="J7z-Mq-Lgs" secondAttribute="centerX" id="PBZ-Xi-ktJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="dQu-um-Rtl" secondAttribute="bottom" constant="50" id="xuL-s5-4fc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="reviewButton" destination="ALA-dw-fcj" id="w38-Oc-Rm9"/>
+                                            <outlet property="writeReviewLabel" destination="HTb-3I-N5T" id="fmk-JC-6FL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="P1B-DF-kFa" id="Ic9-o0-VbL"/>
+                                    <outlet property="delegate" destination="P1B-DF-kFa" id="Kco-xV-8Qz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EFC-Iz-KNp" firstAttribute="top" secondItem="P1B-DF-kFa" secondAttribute="top" id="Sip-Co-GIi"/>
+                            <constraint firstItem="EFC-Iz-KNp" firstAttribute="trailing" secondItem="CbD-g8-Xn9" secondAttribute="trailing" id="Yfc-23-xaH"/>
+                            <constraint firstItem="EFC-Iz-KNp" firstAttribute="leading" secondItem="CbD-g8-Xn9" secondAttribute="leading" id="hUo-xH-KzO"/>
+                            <constraint firstItem="EFC-Iz-KNp" firstAttribute="bottom" secondItem="P1B-DF-kFa" secondAttribute="bottom" constant="-90" id="kAZ-kD-11f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CbD-g8-Xn9"/>
+                        <connections>
+                            <outlet property="yogaDetailsTableView" destination="EFC-Iz-KNp" id="f7G-hS-ODs"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYM-Kk-trM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173.913043478261" y="669.64285714285711"/>
+        </scene>
+        <!--Custom Navigation Controller-->
+        <scene sceneID="8ep-Fp-aAk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="eeB-mo-Kk6" customClass="CustomNavigationController" customModule="YogaExplore" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hll-zR-pSz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gyi-0q-LjF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tcu-ir-Pru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backIcon.png" width="100" height="100"/>
+        <image name="favoriteIcon.png" width="100" height="100"/>
+        <image name="locationIcon.png" width="100" height="100"/>
+        <image name="ratingIcon.png" width="100" height="100"/>
+        <image name="reviewButtonIcon.png" width="100" height="100"/>
+        <image name="yogaBackgroundImage.jpeg" width="1612.800048828125" height="1075.199951171875"/>
+    </resources>
+</document>
